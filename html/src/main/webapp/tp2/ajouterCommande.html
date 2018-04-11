@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Ajouter une commande</title>
+
+<style>
+label
+{
+	width: 150px;
+	float: left;
+}
+
+</style>
+</head>
+<body>
+
+		<h1>Gestion des commandes</h1>
+		<h3>Ajout d'une commande</h3>
+		<div>
+			<a href="listerCommande.html">Retour à la liste des commandes</a>
+		</div>
+		<form>
+			<label for="numero">Numéro </label><input type="text" id="numero" style="background-color: white;"/><br />
+			<label for="date">Date </label><input type="text" id="date" value="jj / mm / aaaa" style="background-color: white;"/><br />
+			<label for="livreur">Livreur </label>
+			<select id="livreur" style="background-color: white;">
+  				<option value="livreur1" selected>Lionel ARMAND</option>
+  				<option value="livreur2">Jeanot</option>
+  				<option value="livreur3">Roberto</option>
+			</select></br>
+			<label for="client">Client </label>
+			<select id="client" style="background-color: white;">
+  				<option value="client1" selected>Sophie ARMANI</option>
+  				<option value="client2">Michelle</option>
+  				<option value="client">Josiane</option>
+			</select></br>
+			<input type="submit" value="Ajouter" style="background-color: white;"/>
+
+		</form>
+
+</body>
+</html>
