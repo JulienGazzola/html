@@ -1,0 +1,52 @@
+@CHARSET "ISO-8859-1";
+
+label
+{
+	width: 150px;
+	float: left;
+}
+
+body {
+	background-color : #EFECCA;
+	font-family: "Helvetica", "Arial"
+}
+
+h1 {
+	color: #C03000;
+	padding: 15px 10px 15px 10px;
+	margin: 0px auto;
+}
+
+h2 {
+	color : #4BB5C1;
+	padding: 10px 10px 5px 10px;
+	margin: 0px auto;
+}
+
+form {
+	padding: 10px 10px 5px 10px;
+}
+
+a {
+	text-decoration:none;
+	front-size : 15px;
+	padding: 15px 10px 15px 10px;
+	color: #96CA2D;
+}
+
+input {
+	background-color : #DD0000;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+input[type=text]{
+	background: white;
+	color: grey;
+}
+
+input[type=submit] {
+	background: #FF0000;
+	color: white;
+}

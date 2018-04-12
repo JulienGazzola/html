@@ -3,38 +3,24 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Ajouter un Client</title>
-<style>
-label
-{
-	width: 150px;
-	float: left;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 	<div>
 		<h1>Gestion des clients</h1>
-		<h3>Création d'un client</h3>
+		<h2>Création d'un client</h3>
+		
+		<a href="listerClient.html"> << Retour à la liste</a>
 
 		<form>
-			<label for="nom">Nom </label><input type="text" id="nom" style="background-color: white;"/><br />
-			<label for="prenom">Prénom </label><input type="text" id="prenom" style="background-color: white;"/><br />
-			<label for="ville">Ville </label><input type="text" id="ville" style="background-color: white;"/><br />
-			<label for="age">Age </label><input type="text" id="age" style="background-color: white;"/><br />
-			<input type="submit" value="Ajouter" style="background-color: white;"/>
+			<label for="nom">Nom </label><input type="text" id="nom" placeholder="Nom"/><br />
+			<label for="prenom">Prénom </label><input type="text" id="prenom" placeholder="Prenom"/><br />
+			<label for="ville">Ville </label><input type="text" id="ville" placeholder="Ville"/><br />
+			<label for="age">Age </label><input type="text" id="age" placeholder="Age"/><br />
+			<input type="submit" class="input_submit" value="Ajouter"/>
 
 		</form>
-	</div>
-	
-	<div>
-		L'insertion a été correctement effectuée</br>
-		<a href="listerClient.html">Retour</a>
-	</div>
-	<div>
-		L'insertion à échouée</br>
-		<a href="listerClient.html">Retour</a>
 	</div>
 
 </body>

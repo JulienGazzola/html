@@ -1,0 +1,27 @@
+@CHARSET "ISO-8859-1";
+
+li {
+	display:inline;
+	list-style:none;
+	font-size: 20px;
+
+	margin: 0px auto;
+	margin-botton: 10px;
+	padding: 10px;
+}
+
+.Degrade1 {
+	background-image:linear-gradient(to right, yellow, red);
+}
+
+.Degrade2 {
+	background-image:linear-gradient(to left, green, red);
+}
+
+.Degrade3 {
+	background-image:linear-gradient(to top, red, blue);
+}
+
+.Degrade4 {
+	background-image:linear-gradient(to bottom, green, blue);
+}

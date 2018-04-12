@@ -1,0 +1,58 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	background-color : #EFECCA;
+	font-family: "Helvetica", "Arial"
+}
+
+h1, h3{
+	color: #C03000;
+	padding: 15px 10px 15px 10px;
+	margin: 0px auto;
+}
+p {
+	padding: 5px 20px 5px 20px;
+	margin: 0px auto;
+}
+
+h2 {
+	color : #4BB5C1;
+	padding: 10px 10px 5px 10px;
+	margin: 0px auto;
+}
+
+li {
+	display:inline;
+	list-style:none;
+	font-size: 20px;
+	background-color : #DD0000;
+	height : 20px;
+	width : 20%;
+	margin: 0px auto;
+	margin-botton: 10px;
+	padding: 10px;
+	border:solid 2px;
+	border-color: #660000;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+li a {
+	color:white;
+}
+
+li a:hover {
+	text-decoration: underline;
+}
+li:hover{
+	background-color: #009900;
+}
+
+
+a {
+	text-decoration:none;
+	front-size : 15px;
+	color: #0000FF;
+}
