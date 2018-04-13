@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript</title>
+</head>
+<body>
+
+	<div id='monDiv'
+		style='height: 150px; width: 150px; background-color: black'></div>
+
+	<input type="button" onclick="changeColor(this.id);" id="red" value="Rouge" />
+	<input type="button" onclick="changeColor(this.id);" id="green" value="Vert" />
+	<input type="button" onclick="changeColor(this.id);" id="blue" value="Bleu" />
+
+	<script type="text/javascript">
+		function changeColor(color) {
+			document.getElementById('monDiv').style.backgroundColor = color;
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript</title>
+</head>
+<body>
+
+	<form name="test">
+		<input type="text" id="name" name="nom"/>
+		<input type="button" onclick="getAge();" value="Quel age as-tu ?" />
+	</form>
+	<br />
+
+	<script type="text/javascript">
+		var array = {
+			"anatole" : 19,
+			"bernard" : 45,
+			"christophe" : 34,
+			"dominique" : 55,
+			"franck" : 28,
+			"georges" : 78,
+			"lucas" : 12,
+			"madeleine" : 30,
+			"pierre" : 25
+		};
+
+		function getAge() {
+			var test = document.getElementById("name").value;
+			for (var i = 0; i != test.length; i++){
+				if (i == 0){
+					var fin = test.charAt(i).toUpperCase();
+				}
+				else{
+					fin = fin + test.charAt(i);
+				}
+			}
+			alert(fin +  " a " +  array[test] +  " ans");
+		}
+	</script>
+
+</body>
+</html>

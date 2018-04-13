@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+var notes = [15,12,18,14,16,16,19,13,11,10,16,15];
+
+function moyenne(notes){
+	var nb = notes.length;
+	var total = 0;
+	for (var i = 0; i < nb; i++){
+		total = total + notes[i];
+	}
+	var result = total / nb;
+	return(result);
+}
+
+document.write("La moyenne vaut ", Math.round((moyenne(notes))*100)/100 );
+
+</script>
+
+</body>
+</html>
