@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ajax</title>
+</head>
+<body>
+
+	<div>
+		<ul id="Users"></ul>
+		<input id="user" type="text" />
+		<button id="addUser" type="button" onClick="addUser();">Ajouter</button>
+	</div>
+
+	<div id="demo"></div>
+
+	<script type="text/javascript">
+		function afterResultLoad() {
+			var obj = JSON.parse(this.responseText);
+			obj.forEach(function(element){
+				var elementUsers = document.getElementById("Users");
+				var newElementUser = document.createElement("li");
+				var newTextUser = document.createTextNode(element.name + ", " + element.password);
+				newElementUser.appendChild(newTextUser);
+				elementUsers.appendChild(newElementUser);
+			})
+		}
+		var xhttp = new XMLHttpRequest();
+		xhttp.onload = afterResultLoad;
+		xhttp.open("GET", "http://loisirs-web-backend.cleverapps.io/users ", true);
+		xhttp.send();
+	</script>
+
+</body>
+</html>
